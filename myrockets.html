@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Rockets</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #CAE7DF;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .gallery-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .header {
+     text-align: center;
+     margin-bottom: 50px;
+    }
+
+    .gallery-item .caption {
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+     footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+     
+    nav {
+            background: #fff;
+            padding: 12px 0;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 40px;
+            position: center;
+        }
+        nav a {
+            margin-right: 25px;
+            font-weight: 500;
+        }
+  </style>
+</head>
+<body>
+<div class="header">
+        	<h1>🚀 Working with Rockets & Drones</h1>
+        	<p style="font-size:1.2em; color:#555;">My projects, builds, and experiments</p>
+    	</div>
+
+    	<nav>
+        	<a href="#">Home</a>
+        	<a href="#rockets">Rockets</a>
+        	<a href="#drones">Drone Project</a>
+        	<a href="#tutorials">Tutorials</a>
+        	<a href="#">Contact</a>
+    	</nav>
+
+  <h1>My Image Gallery</h1>
+  
+  <div class="gallery">
+    <!-- Image 1 -->
+    <div class="gallery-item">
+      <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1602622334-31As3y06SVL.jpg?crop=1xw:1xh;center,top&resize=980:*"" alt="Soviet Sasha Rocket">
+      <div class="caption">Soviet "Sasha" Rocket</div>
+    </div>
+    
+    <!-- Image 2 -->
+    <div class="gallery-item">
+      <img src="https://estesrockets.com/cdn/shop/products/7266047776072664PT05.jpg?v=1677703674&width=990" alt="Red Nova Rocket">
+      <div class="caption">Red Nova Rocket</div>
+    </div>
+    
+    <!-- Image 3 -->
+    <div class="gallery-item">
+      <img src="https://www.rocketreviews.com/file-90495/Estes%20Little%20John%20Mini%20Brute%205-0.jpg" alt="Little John Rocket">
+      <div class="caption">Little John Rocket</div>
+    </div>
+    
+    <!-- Image 4 -->
+    <div class="gallery-item">
+      <img src="https://thedefensepost.com/wp-content/uploads/2024/08/AFP__20240413__MEI-Iran-A-ISHD-20240307-004__v1__HighRes__IranianShahedDrones-2048x1366.jpg" alt="Drone">
+      <div class="caption">Drone</div>
+    </div>
+    
+    <!-- Image 5 -->
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/251/600/400" alt="More Projects coming soon.">
+      <div class="caption">More Projects coming soon.</div>
+    </div>
+    
+    <!-- Image 6 -->
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/870/600/400" alt="More Projects coming soon.">
+      <div class="caption">More Projects coming soon.</div>
+    </div>
+    
+    <!-- Image 7 -->
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1018/600/400" alt="More Projects coming soon.">
+      <div class="caption">More Projects coming soon.</div>
+    </div>
+    
+    <!-- Image 8 -->
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/106/600/400" alt="More Projects coming soon.">
+      <div class="caption">More Projects coming soon.</div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
+
+<div class="footer">
+<footer>
+<p>Site made by Ben Bramhall | <a href="https://github.com/benbramhall">GitHub</a></p>
+        <p style="margin-top:20px;">© 2026 • All projects are for educational and hobby purposes.</p> </footer>
