@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Rockets</title>
+    <style>
+         body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #CAE7DF;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+        }
+        h1 {
+            font-size: 2.8em;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+	    border-radius: 20px;	
+        }
+        .emoji {
+            font-size: 1.4em;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 30px;
+        }
+        .card {
+            border-left: 5px solid #0066cc;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        nav {
+            background: #fff;
+            padding: 12px 0;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 40px;
+        }
+        nav a {
+            margin-right: 25px;
+            font-weight: 500;
+        }
+    
+
+        /* Navigation Menu */
+        ul {
+            list-style-type: none;
+            margin: 0 0 30px 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+       
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+	/* keep your animation */
+	.animated-text {
+  	font-size: 2rem;
+  	opacity: 0;
+  	animation: fadeSlide 5s ease-out forwards;
+	}
+
+	@keyframes fadeSlide {
+ 	 0% {
+   	 opacity: 0;
+   	 transform: translateY(20px);
+ 	 }
+  	100% {
+    	opacity: 1;
+    	transform: translateY(0);
+  	}
+}
+
+
+        /* Tutorial Grid */
+        .tutorials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tutorial-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tutorial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image {
+            height: 180px;
+            background: linear-gradient(135deg, #297373, #FF8552);
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .difficulty {
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .beginner { background: #d4edda; color: #155724; }
+        .intermediate { background: #fff3cd; color: #856404; }
+        .advanced { background: #f8d7da; color: #721c24; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #111;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚀 Working with Rockets & Drones</h1>
+        <p style="font-size:1.2em; color:#555;">My projects, builds, and experiments</p>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#rockets">Rockets</a>
+        <a href="#drones">Drone Project</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#">Contact</a>
+    </nav>
+
+	</head>
+<body>
+
+
+    
+    <p class="subtitle">Step-by-step guides to help you build rockets, drones, and more</p>
+
+    <!-- Tutorial Cards -->
+    <div class="tutorials-grid">
+
+        <div class="tutorial-card">
+            <div class="card-image">🚀</div>
+            <div class="card-content">
+                <h3>Building Your First Model Rocket</h3>
+                <p>Complete beginner guide to assembling, painting, and launching your first rocket.</p>
+                <div class="meta">
+                    <span class="difficulty beginner">Beginner</span>
+                    
+                </div>
+                <a href="#" class="btn">Start Tutorial →</a>
+            </div>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="card-image">🛠️</div>
+            <div class="card-content">
+                <h3>Building Your First Drone</h3>
+                <p>How to build the foundation of a 10-15 lb drone using sturdy, lightweight materials.</p>
+                <div class="meta">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    
+                </div>
+                <a href="#" class="btn">Start Tutorial →</a>
+            </div>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="card-image">📡</div>
+            <div class="card-content">
+                <h3>Basic Electronics for Rockets & Drones</h3>
+                <p>Learn about flight controllers, ESCs, batteries, and wiring safety.</p>
+                <div class="meta">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    
+                </div>
+                <a href="#" class="btn">Start Tutorial →</a>
+            </div>
+        </div>
+
+        <!-- Add more cards here as needed -->
+
+    </div>
+<div class="footer">
+<footer>
+<p>Site made by Ben Bramhall | <a href="https://github.com/benbramhall">GitHub</a></p>
+        <p style="margin-top:20px;">© 2026 • All projects are for educational and hobby purposes.</p> </footer>
+
+</body>
+</html>
