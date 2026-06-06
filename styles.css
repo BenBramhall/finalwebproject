@@ -108,6 +108,87 @@ h2 {
     padding-bottom: 10px;
 }
 
+/* Tutorial Specific Styles */
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.tutorial-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    height: 180px;
+    background: linear-gradient(135deg, #297373, #FF8552);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #888;
+    align-items: center;
+}
+
+.difficulty {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.beginner { background: #d4edda; color: #155724; }
+.intermediate { background: #fff3cd; color: #856404; }
+.advanced { background: #f8d7da; color: #721c24; }
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #111;
+}
+
 /* Gallery (for myrockets.html) */
 .gallery {
     display: grid;
@@ -177,5 +258,9 @@ footer {
     nav a {
         margin: 8px 10px;
         display: inline-block;
+    }
+    
+    .tutorials-grid {
+        grid-template-columns: 1fr;
     }
 }
